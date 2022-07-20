@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RestController
 public class UrlCheckController {
 
-    private static final String SITE_IS_UP = "<h1>Site is up!</h1>";
-    private static final String SITE_IS_DOWN = "Site is down!";
-    private static final String SITE_IS_UNREACHABLE = "Site is unreachable!";
+    private static final String SITE_IS_UP = "<center><h1>Site is up!</h1></center>";
+    private static final String SITE_IS_DOWN = "<center><h1>Site is down!</h1></center>";
+    private static final String SITE_IS_UNREACHABLE = "<center><h1>Site is unreachable!</h1></center>";
 
     @GetMapping("/check")
     public String getUrlStatus(@RequestParam String url) {
