@@ -11,9 +11,9 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @RestController
-public class UrlChechkController {
+public class UrlCheckController {
 
-    private static final String SITE_IS_UP = "Site is up!";
+    private static final String SITE_IS_UP = "<h1>Site is up!</h1>";
     private static final String SITE_IS_DOWN = "Site is down!";
     private static final String SITE_IS_UNREACHABLE = "Site is unreachable!";
 
